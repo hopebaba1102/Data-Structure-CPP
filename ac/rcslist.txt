@@ -1,0 +1,3 @@
+Time and RCS verson stamps for sources:
+/* RCS $Id: cxc-1.c,v 1.1 1997/08/11 18:02:51 berman Exp $ */
+// RCS $Id: cxc-2.cpp,v 1.1 1997/08/11 18:02:58 berman Exp $
