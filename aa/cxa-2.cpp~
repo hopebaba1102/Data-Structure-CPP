@@ -12,9 +12,9 @@
 // cxa-2.cpp
 // Code Example A-2: Example of using the getline function
 
-#include <iostream>		//removed the .h extension
+#include <iostream>
 
-using namespace std;		//added for cin and cout etc
+using namespace std;
 
 int main()
 {

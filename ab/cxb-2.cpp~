@@ -12,9 +12,9 @@
 // cxb-2.cpp
 // Code Example B-2: A (very) simple Interactive Calculator
 
-#include <iostream>		//removed the .h extension 
+#include <iostream>
 
-using namespace std;		//added for cin and cout
+using namespace std;
 
 void welcome_user()
 {

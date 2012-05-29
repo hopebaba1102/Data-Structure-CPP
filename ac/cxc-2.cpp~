@@ -14,9 +14,9 @@
 // This program reads integers into an array, sorts them with
 // Bubble Sort, and prints the result.
 
-#include <iostream>		//removed the .h extension  
+#include <iostream>
 
-using namespace std;		//for cin and cout
+using namespace std;
 
 // swap the values of two integers
 void swap(int & a, int & b)
