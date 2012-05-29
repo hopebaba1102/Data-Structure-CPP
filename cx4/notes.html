@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>Chapter 4: Release Notes </TITLE>
+</HEAD>
+<H3>
+Chapter 4: Release Notes
+</H3>
+<UL>
+<LI><TT>cx4-1.cpp</TT> and <TT>cx4-2.cpp</TT> are not working
+examples as presented, since there's no definition for the
+Time ADT. Use <TT>cx4-6.cpp</TT> (along with <TT>cx4-5.h</TT>
+and <TT>cx4-7.cpp</TT> or <TT>cx4-7a.cpp</TT>) if you want a working model.
+<LI>The <I>readTime</I> member function defined in
+<TT>cx4-7.cpp</TT> can go into an endless loop if you give 
+it bad input, because the iostream buffer doesn't get
+cleared. If you would prefer a more complicated but more
+robust version, use <TT>cx4-7a.cpp</TT>, which includes code
+for clearing the stream. (The same problem would occur if you
+used <TT>cx4-3.cpp</TT> but it's not really designed to be
+used as is so I didn't create a new version of it.)
+<LI><TT>cx4-8.cpp</TT> may or may not compile for you without
+modification, depending on how the C++ String Library is
+implemented on your system; see <A
+HREF="http://www.rowan.edu/evolve/Software/strings/index.html">Using
+String Classes</A> for a discussion and workaround.
+</UL>
+<P><I>Last modified: 8/1/1997</I>
+<P ALIGN=Left>
+<A HREF="http://www.rowan.edu/evolve/Software/shp.htm">Return to the software
+home page</A>
+<P ALIGN=Left>
+<A HREF="http://www.rowan.edu/evolve"><IMG SRC="http://www.rowan.edu/evolve/covermin.gif" WIDTH="40"
+    HEIGHT="52">Return to Evolution Home Page</A>
+</BODY></HTML>

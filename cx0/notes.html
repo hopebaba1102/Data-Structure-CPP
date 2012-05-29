@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<TITLE>Chapter 0: Release Notes </TITLE>
+</HEAD>
+<H3>
+Chapter 0: Release Notes
+</H3>
+The files <TT>compid.h</TT> and <TT>dslib.h</TT> are designed to make all the
+software in the portable by minimizing dependencies on
+particular compilers. All example code in the book includes
+<TT>dslib.h</TT>. <TT>dslib.h</TT> in turn includes
+<TT>compid.h</TT>. The idea is that in order to add support
+for a new compiler, you should edit the <TT>compid.h</TT> and
+leave <TT>dslib.h</TT> alone. Typically, your compiler will
+have one or more predefined variable that will uniquely
+identify the compiler, and often the version number. <A HREF="compid.h">Take a
+look at <TT>compid.h</TT></A> and you can see how it works.
+
+<P>Right now, the following preprocessor variables are used by
+<TT>dslib.h</TT>:
+<UL>
+<LI><TT>__MB_COMPILER_DEFINES_BOOL__</TT>: this should be set
+if the compiler you are using implements <TT>bool</TT>,
+<TT>true</TT>, and <TT>false</TT>; otherwise, <TT>dslib.h</TT>
+will use an <TT>enum</TT> to fake it.
+<LI><TT>__MB_SIMULATE_BORLAND_RANDOM__</TT>: set this for any
+compiler that does not implement random numbers in the style
+used by the Borland compilers.
+</UL>
+
+<P>Originally, I was going to support some of the older
+compilers, such as Turbo C++ 3.0, using this mechanism, but it
+made the header files very messy. Instead, take a look at <A
+HREF="http://www.rowan.edu/evolve/Software/compnote.htm">
+Notes on Specific Compilers</A> for
+information on Turbo C++ 3.0 and other compilers that have
+particular issues. In some cases, you will need to modify the
+code by hand.
+
+<P><I>Last modified: 7/30/1997</I>
+<P ALIGN=Left>
+<A HREF="http://www.rowan.edu/evolve/Software/shp.htm">Return to the software
+home page</A>
+<P ALIGN=Left>
+<A HREF="http://www.rowan.edu/evolve"><IMG SRC="http://www.rowan.edu/evolve/covermin.gif" WIDTH="40"
+    HEIGHT="52">Return to Evolution Home Page</A>
+</BODY></HTML>
